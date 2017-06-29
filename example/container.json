@@ -1,0 +1,24 @@
+{
+	"services": {
+		"foo": {
+			"class": "Foo",
+			"arguments": [
+
+			],
+			"calls": [
+
+			]
+		},
+		"bar": {
+			"factory": {"$ref": "foo"},
+			"method": "barify",
+			"arguments": [
+				"asd",
+				{"$ref": "eggs"}
+			]
+		}
+	},
+	"calls": [
+		{"service": "bar", "method": "addBarer", "arguments": []}
+	]
+}

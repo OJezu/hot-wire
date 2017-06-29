@@ -1,0 +1,11 @@
+node_modules
+coverage
+.nyc_output
+.project
+.metadata
+*~
+*.log
+*.tmp
+.idea
+*.swp
+nohup.out

@@ -1,0 +1,31 @@
+{
+	"excludeFiles" : ["node_modules", ".git", "coverage"],
+	"disallowEmptyBlocks": {"allExcept": ["comments"]},
+	"disallowMixedSpacesAndTabs": "smart",
+	"disallowMultipleLineBreaks": true,
+	"disallowMultipleLineStrings": true,
+	"disallowMultipleVarDecl": "exceptUndefined",
+	"disallowOperatorBeforeLineBreak": ["+", ".", "||", "&&", "-", "!", "/", "*", "%"],
+	"disallowTrailingWhitespace": true,
+	"maximumLineLength": 120,
+	"safeContextKeyword": ["self"],
+	"requireCommaBeforeLineBreak": true,
+	"requireCurlyBraces": true,
+	"requirePaddingNewlinesBeforeKeywords": [
+		"do",
+		"for",
+		"if",
+		"return",
+		"switch",
+		"throw",
+		"try",
+		"while"
+	],
+	"requireParenthesesAroundIIFE": true,
+	"requireQuotedKeysInObjects": true,
+	"requireSpaceBetweenArguments": true,
+	"requireTrailingComma": {"ignoreSingleValue": true, "ignoreSingleLine": true},
+	"validateIndentation": { "value": "\t" },
+	"validateLineBreaks": "LF",
+	"validateQuoteMarks": "\""
+}
