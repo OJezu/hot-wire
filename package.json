@@ -1,6 +1,6 @@
 {
   "name": "hotwire",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "src/HotWire.js",
   "directories": {
@@ -11,13 +11,15 @@
     "_coverage": "rm -rf ./nyc_output && ./node_modules/nyc/bin/nyc.js --reporter lcov mocha --recursive",
     "coverage": "npm run-script _coverage && ( nohup xdg-open './coverage/lcov-report/index.html' > /dev/null || nyc report)",
     "coverage-text": "npm run-script _coverage && ./node_modules/istanbul/lib/cli.js report text",
-    "test": "./node_modules/jshint/bin/jshint src test  && ./node_modules/jscs/bin/jscs src test && ./node_modules/mocha/bin/mocha --recursive"
+    "test": "./node_modules/jshint/bin/jshint src test  && ./node_modules/jscs/bin/jscs src test && ./node_modules/mocha/bin/mocha --recursive",
+    "coveralls": "npm run-script _coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "Krzysztof Chrapka",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.0.2",
     "chai-as-promised": "^7.0.0",
+    "coveralls": "^2.13.1",
     "dirty-chai": "^2.0.0",
     "jscs": "^3.0.7",
     "jshint": "^2.9.5",
