@@ -1,10 +1,11 @@
 {
-  "name": "hotwire",
+  "name": "hot-wire",
   "version": "0.0.1",
   "description": "",
   "main": "src/HotWire.js",
   "directories": {
-    "example": "example"
+    "example": "example",
+	"test": "test"
   },
   "scripts": {
     "postinstall": "( [ -d .git ] && for i in tools/git-hooks/*; do cp -n \"tools/git-hooks/$(basename \"$i\")\" \".git/hooks/$(basename \"$i\")\"; done) || exit 0",
