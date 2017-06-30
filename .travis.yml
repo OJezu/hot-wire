@@ -1,15 +1,17 @@
 language: node_js
 node_js:
-  - '5'
-  - '6.11'
-  - '7'
-  - 8.1.3
+- '5'
+- '6.11'
+- '7'
+- 8.1.3
 after_script:
-  - npm run-script coveralls
+- npm run-script coveralls
 deploy:
   provider: npm
-  email: "npm@ojezu.org"
-  api_key: "TO1Lvy6gP508qegN8b9okvtChzpj6Ptj4g9VVshXshKov8sTO2GpE0iBevXcer2oyCZxfLKIdIwrxdTjMQl/xBV8HGeanTFwsqbLO4Ug+5vw4oVLryK6jEAERCQJRu35k1KM3jmWIbSIbeLBZm/PpDlDER6ZBi3fXtA6W4P7vPmuzJRsHJV2k0so0viuR4WY24sKyolfC9GimqGArZNmk3yebvG4DXi/G47YrEwAZAKMmnqRZA7Y+gEmeFpA31c8vc+09mmV8rjnrCGlQ1LL00QDPFcpgmptswLZUoY+kJkg4+FQZr+seu0tGPkSsUvbRu0tPbY8saoKuuvr0JzVR6tge8RwwyrcppSamZecDuhBO/CbARstaLKP7451F9ClwcxNGGgZN3uJUGDuPJTImUukP+Du+fJ5UqwVr7R5LFnQwEj92Do/6pRvWDnbGqrqSfxz00Wtn9ndI8RO39j6q426yG4OIjXeS+8R147h2Z0EmZG5A8mIRfkt7OmE2IOiVnjqD33yo1PfLSfSEzK3CueVOk4ETobJKSSjYDqTHzx/hm03Us+ymOP5gPEqk7mlKp4NlDVUedODrIoxWYLxrm4Mrd3agUAd2Uc4l6tFiDW6v3QxtNP8aBbCyi1XaRwOs7z7ouA89tGipVxYxbUScJhwDmG8GrVsqy7s4n4d+mE="
+  email: npm@ojezu.org
+  api_key:
+    secure: CL21eQJ9SuLrF9DrZXmvMRrPq2cglePFc3bAqxIbp/Y6/IEeD0T07xdEq2ipd+tuvgtdyasEuGJGVmFRRGsYeO/L6FPcmwgR8SA4k8QfeRitni8tnO8L+MjNC/PoqZn85agMc94Hv+08myZJTX+tE4Ug9hokChTd51z6Pk1LMVJ/OoV9HZojKHcWVhHYmimyM1Ht1q34SINqwfn3h46T8dV/bOmXWrktYsG/mcQSxjFuD/akFP804P0IeQ2u19nlqHqwBIEjgVxNOsB0tb+c1ny/y8i0j1NaGmQm6eAQN0MOeRtNwIGlMTwcisDqW3Vq4mbV6DUKHgEZ6tzE3cDKwaeuE4aodwC6dKrm74d6om5i41AXwVn8PE54HUVX/XRMrVSG5ZCHKjWKdDdIPIBDVlqkn1Nt7LhJYQaqS09NBcO73JRSSQLGfRnGEcUz5QmbbEsUyW3aeeLcOETts3V+rl/LUemUJ5kTijNr5pW1IgKroIZHh+FuLcD96OvVMg1fIFSMQjrbek/cpoy7zyGXdnURLbQp8Girhv+18vGqSJ3UxB8poGeQu8jCSXE9f4Cxw8mH5z738vASbMLl2zVtaSz0kWKr3XrfExI/OZBDWYi/n8xY08pH2ZUYQBzauVVU5HuZObWTAa5A72zkJysBYhzi5YWIdienCaVV1PN6QjY=
   on:
     tags: true
     branch: master
+    repo: OJezu/hot-wire
