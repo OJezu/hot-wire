@@ -1,8 +1,15 @@
 language: node_js
 node_js:
-  - "5"
-  - "6.11"
-  - "7"
-  - "8.1.3"
+  - '5'
+  - '6.11'
+  - '7'
+  - 8.1.3
 after_script:
- - "npm run-script coveralls"
+  - npm run-script coveralls
+deploy:
+  provider: npm
+  email: "npm@ojezu.org"
+  api_key: "TO1Lvy6gP508qegN8b9okvtChzpj6Ptj4g9VVshXshKov8sTO2GpE0iBevXcer2oyCZxfLKIdIwrxdTjMQl/xBV8HGeanTFwsqbLO4Ug+5vw4oVLryK6jEAERCQJRu35k1KM3jmWIbSIbeLBZm/PpDlDER6ZBi3fXtA6W4P7vPmuzJRsHJV2k0so0viuR4WY24sKyolfC9GimqGArZNmk3yebvG4DXi/G47YrEwAZAKMmnqRZA7Y+gEmeFpA31c8vc+09mmV8rjnrCGlQ1LL00QDPFcpgmptswLZUoY+kJkg4+FQZr+seu0tGPkSsUvbRu0tPbY8saoKuuvr0JzVR6tge8RwwyrcppSamZecDuhBO/CbARstaLKP7451F9ClwcxNGGgZN3uJUGDuPJTImUukP+Du+fJ5UqwVr7R5LFnQwEj92Do/6pRvWDnbGqrqSfxz00Wtn9ndI8RO39j6q426yG4OIjXeS+8R147h2Z0EmZG5A8mIRfkt7OmE2IOiVnjqD33yo1PfLSfSEzK3CueVOk4ETobJKSSjYDqTHzx/hm03Us+ymOP5gPEqk7mlKp4NlDVUedODrIoxWYLxrm4Mrd3agUAd2Uc4l6tFiDW6v3QxtNP8aBbCyi1XaRwOs7z7ouA89tGipVxYxbUScJhwDmG8GrVsqy7s4n4d+mE="
+  on:
+    tags: true
+    branch: master
